@@ -1,10 +1,11 @@
 import { createResource } from 'solid-js';
 import { CardProps } from '../item-grid/item-card/item-card';
 import './main-content.css';
+import { ItemGrid } from '../item-grid/item-grid';
 
 export const MainContent = () => {
     const [data] = createResource<CardProps[]>(async () => {
-        const resources = await fetch('/sampleData.json');
+        const resources = await fetch('/data.json');
         const result = await resources.json();
         return result;
     })
@@ -19,7 +20,7 @@ export const MainContent = () => {
                     <input type='number' placeholder='Price' />
                     <input type='text' placeholder='Item Type' />
                 </div>
-                { /* <ItemGrid items={data()} /> */}
+                <ItemGrid items={data()!} />
             </div>
         </main>
     )

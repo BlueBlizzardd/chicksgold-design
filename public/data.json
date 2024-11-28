@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Buster Sword",
+        "icon": "/Buster_Sword.png",
+        "price": "250.00",
+        "description": "If you're in the business of monster slaying, you need look no further than this sword."
+    },
+    {
+        "name": "Chaos Emerald (Pink)",
+        "icon": "/Chaos_Emerald_(Pink).png",
+        "price": "100.00",
+        "description": "A septet of brilliant-cut gemstones with unlimited power"
+    },
+    {
+        "name": "Wheel of Fate",
+        "icon": "/Wheel_of_Fate.png", 
+        "price": "50.00",
+        "description": "A Keyblade with an emphasis on Strength."
+    },
+    {
+        "name": "Killing Edge",
+        "icon": "/Killing_Edge.png",
+        "price": "1000.00",
+        "description": "A sword whose design yields frequent critical hits."
+    },
+    {
+        "name": "Choice Specs",
+        "icon": "/Choice_Specs.png",
+        "price": "12.00",
+        "description": "An item to be held by a Pokémon. These curious glasses boost Sp. Atk but only allow the use of one move."
+    }
+]

@@ -31,6 +31,7 @@ body {
 
 button {
   border-radius: 4px;
+  cursor: pointer;
 
   >span {
     font-family: 'Roboto', sans-serif;
