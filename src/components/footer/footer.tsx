@@ -1,10 +1,11 @@
+import { Socials } from '../socials/socials'
 import './footer.css'
 
 export const Footer = () => {
     return (
         <div class="footer">
             <div class="footer-container flex flex-column">
-                {/* <Socials /> this is for later */}
+                <Socials />
                 <div class="ruler"></div>
                 <div class="info flex">
                     <div class="info-column">
