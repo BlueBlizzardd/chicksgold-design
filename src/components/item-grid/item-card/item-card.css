@@ -5,7 +5,7 @@
         background: rgba(76, 96, 133, .15) 0 0 no-repeat padding-box;
         color: white;
 
-        *:not(.options-row *) {
+        *:not(.options-row *, .info-row *, .stock-info *) {
             margin-bottom: 10px;
         }
     }
@@ -31,6 +31,7 @@
         display: list-item;
         text-transform: uppercase;
         list-style-position: inside;
+        margin-bottom: 10px;
 
         &::marker {
             color: #39e29d;
@@ -53,6 +54,20 @@
         img {
             display: block;
             width: 50px;
+            aspect-ratio: 1;
+        }
+    }
+
+    .info-row {
+        justify-content: space-between;
+        align-items: center;
+
+        >.logo {
+            width: 25px;
+            border: 1px solid #39e29d;
+            border-radius: 20px;
+            padding: 2px;
+            object-fit: contain;
             aspect-ratio: 1;
         }
     }

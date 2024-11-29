@@ -21,7 +21,10 @@ export const ItemCard: Component<CardProps> = (props) => {
             <div class='icon'>
                 <img src={props.icon} alt='icon' />
             </div>
-            <div class='title'>{props.name}</div>
+            <div class="info-row flex">
+                <div class='title'>{props.name}</div>
+                <img src="/item-logo.png" alt="item-logo" class="logo" />
+            </div>
             <div class='price-row flex'>
                 <div class='price'>${props.price / 2}</div>
                 <div class='discount'>${props.price}</div>
