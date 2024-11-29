@@ -1,5 +1,6 @@
 import { Component, Index, Suspense } from "solid-js"
 import { CardProps, ItemCard } from "./item-card/item-card"
+import { Pagination } from "../main-content/pagination/pagination"
 import './item-grid.css'
 
 export const ItemGrid: Component<{ items: CardProps[] }> = (props) => {
@@ -15,7 +16,7 @@ export const ItemGrid: Component<{ items: CardProps[] }> = (props) => {
                         {item => <ItemCard name={item().name} icon={item().icon} price={item().price} description={item().description} />}
                     </Index>
                 </div>
-                {/* <Pagination /> */}
+                <Pagination />
             </Suspense>
         </div>
     )

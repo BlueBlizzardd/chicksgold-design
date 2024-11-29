@@ -6,7 +6,11 @@
     }
 
     button {
-        border: 1px solid #5762d5;
+        height: 40px;
+        padding-inline: 1rem;
+        cursor: pointer;
+        background-color: transparent;
+        color: white;
 
         &:hover,
         &:active {
@@ -14,12 +18,8 @@
         }
     }
 
-    .arrow-left {
-        transform: rotate(45deg);
-    }
-
-    .arrow-right {
-        transform: rotate(-45deg);
+    .arrow {
+        border: 1px solid #5762d5;
     }
 
     @media (width < 600px) {

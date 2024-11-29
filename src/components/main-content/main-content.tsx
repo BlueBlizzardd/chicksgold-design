@@ -2,7 +2,6 @@ import { createResource } from 'solid-js';
 import { ItemGrid } from '../item-grid/item-grid';
 import { CardProps } from '../item-grid/item-card/item-card';
 import './main-content.css';
-import Pagination from './pagination/pagination';
 
 export const MainContent = () => {
     const [data] = createResource<CardProps[]>(async () => {
@@ -22,7 +21,6 @@ export const MainContent = () => {
                     <input type='text' placeholder='Item Type' class='type-filter' />
                 </div>
                 <ItemGrid items={data()!} />
-                <Pagination />
             </div>
         </main>
     )
