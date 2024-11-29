@@ -31,6 +31,10 @@
     }
 
     @media (max-width: 576px) {
+        :scope {
+            padding: 33px;
+        }
+
         .item-grid {
             gap: 15px;
             grid-template-columns: repeat(1, 1fr);

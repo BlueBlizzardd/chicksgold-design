@@ -1,21 +1,29 @@
 @scope (.nav) {
     :scope {
+        position: fixed;
+        top: 0;
+        z-index: 9999;
         --gap: 0.5rem;
+        align-items: center;
+        min-height: 72px;
+        width: 100%;
         padding-inline: 12px;
+        border-bottom: 1px solid rgba(76, 96, 133, .5);
         background-color: var(--primary-bg);
         color: white;
-        align-items: center;
     }
 
     .nav-brand {
         display: block;
         padding: 0 40px 0 20px;
         border-right: 1px solid hsla(0, 0%, 100%, .3);
+        text-align: center;
 
         img {
-            width: 155px;
-            height: 48px;
-            margin-bottom: 1rem
+            width: 152px;
+            max-height: 32px;
+            margin-bottom: 1rem;
+            vertical-align: middle;
         }
     }
 

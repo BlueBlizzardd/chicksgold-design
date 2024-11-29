@@ -1,0 +1,38 @@
+@scope (.paginator) {
+    :scope {
+        --gap: 7px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        border: 1px solid #5762d5;
+
+        &:hover,
+        &:active {
+            background-color: #5762d5;
+        }
+    }
+
+    .arrow-left {
+        transform: rotate(45deg);
+    }
+
+    .arrow-right {
+        transform: rotate(-45deg);
+    }
+
+    @media (width < 600px) {
+        :scope>button {
+            font-size: 14px;
+            padding-inline: auto;
+            height: 30px;
+            width: 30px;
+
+            &:nth-child(n+4):nth-child(-n+5) {
+                display: none;
+            }
+        }
+    }
+
+}

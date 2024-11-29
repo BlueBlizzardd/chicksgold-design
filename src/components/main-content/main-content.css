@@ -1,6 +1,8 @@
 @scope (.background) {
     :scope {
-        padding: 4rem;
+        margin-top: 72px;
+        padding-top: 110px;
+        padding-bottom: 80px;
         background: no-repeat linear-gradient(transparent, 50%, #37384b), url('/xenoblade.jpg');
         background-size: cover;
         color: white;
@@ -12,7 +14,7 @@
     }
 
     .heading {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 500;
     }
 
@@ -22,7 +24,23 @@
         margin-top: 20px;
 
         >* {
+            appearance: none;
             min-width: 0;
+        }
+    }
+
+    .game-filter {
+        background-color: #4c6085;
+
+        &:hover {
+            background-color: #465778;
+        }
+
+        &::after {
+            content: '';
+            width: 1rem;
+            background: url('/arrow_drop_down.svg') no-repeat right 1rem;
+
         }
     }
 
@@ -69,6 +87,7 @@
             max-width: 960px;
         }
 
+
         .searchbar-row {
             >:first-child {
                 max-width: 294px;
@@ -83,6 +102,10 @@
     @media (min-width: 1200px) and (max-width: 3839px) {
         .container {
             max-width: 1260px;
+        }
+
+        .heading {
+            font-size: 2.5rem;
         }
     }
 }
