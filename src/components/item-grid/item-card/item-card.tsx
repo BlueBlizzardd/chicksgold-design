@@ -16,7 +16,7 @@ export const ItemCard: Component<CardProps> = (props) => {
                     <span class='sale'>On Sale</span>
                     <span class='availability'>In Stock</span>
                 </div>
-                <input type='number' />
+                <input type='number' value='1' min='1' max='50' />
             </div>
             <div class='icon'>
                 <img src={props.icon} alt='icon' />
@@ -28,8 +28,15 @@ export const ItemCard: Component<CardProps> = (props) => {
             </div>
             <div class='description'>{props.description}</div>
             <div class='options-row flex'>
-                {/* <Button background='#3f4254' color='hsla(0,0%,100%,.75)'>Details</Button>
-                <Button background='#5762d5' color='#fff'>Add</Button> */}
+                <button class="details">
+                    <span>Details</span>
+                </button>
+                <button class='add'>
+                    <span>Add</span>
+                    <div class="icon">
+                        <img src="https://chicksgold.com/icons/cart.svg" alt="cart" />
+                    </div>
+                </button>
             </div>
 
         </div>

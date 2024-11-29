@@ -5,24 +5,24 @@
         background: rgba(76, 96, 133, .15) 0 0 no-repeat padding-box;
         color: white;
 
-        * {
+        *:not(.options-row *) {
             margin-bottom: 10px;
         }
     }
 
     .stock {
         --gap: 0.5rem;
-        justify-content: start;
+        justify-content: space-between;
         align-items: center;
 
         > :last-child {
             min-width: 0;
-            margin-right: auto;
+            max-width: 60px;
+            height: 40px;
         }
     }
 
     .stock-info {
-        width: 125%;
         font-size: 10px;
         letter-spacing: .51px;
     }
@@ -80,11 +80,43 @@
 
     .options-row {
         --gap: 11px;
-        justify-content: center;
-        align-items: center;
+        align-content: center;
 
-        * {
-            width: 50%;
+        >button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(50% - 7.5px);
+            height: 40px;
+
+            * {
+                flex: 1 1 auto;
+            }
+        }
+
+        .details {
+            background-color: #3f4254;
+            color: white;
+        }
+
+        .add {
+            background-color: #5762d5;
+            color: white;
+
+            .icon {
+                height: 75%;
+                padding: 3px 1px;
+                border-radius: 4px;
+                background: #454da8;
+                align-content: center;
+
+                img {
+                    display: block;
+                    height: 16px;
+                    width: 16px;
+                    margin-inline: auto;
+                }
+            }
         }
     }
 
