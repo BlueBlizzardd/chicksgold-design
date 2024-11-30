@@ -1,6 +1,6 @@
-import './payment-methods.css'
+import './paymethods.css'
 
-export default function Payment() {
+export default function Paymethods() {
     return (
         <div class='payment-row'>
             <div class='container flex'>
