@@ -1,6 +1,6 @@
 import './paymethods.css'
 
-export default function Paymethods() {
+export const PayMethods = () => {
     return (
         <div class='payment-row'>
             <div class='container flex'>
