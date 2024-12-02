@@ -9,10 +9,6 @@
         --gap: 2rem;
         width: 75%;
         margin-inline: auto;
-
-        > :first-child {
-            align-self: center;
-        }
     }
 
     .ruler {
@@ -67,6 +63,13 @@
     }
 
     @media (width < 1040px) {
+
+        .footer-container {
+            > :first-child {
+                align-self: center;
+            }
+        }
+
         .info {
             justify-content: center;
             text-align: center;

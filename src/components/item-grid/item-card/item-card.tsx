@@ -1,5 +1,6 @@
-import { Component } from "solid-js"
+import { Component, useContext } from "solid-js"
 import './item-card.css'
+import { CartContext } from "../../../context/cart"
 
 export type CardProps = {
     name: string,
@@ -9,6 +10,9 @@ export type CardProps = {
 }
 
 export const ItemCard: Component<CardProps> = (props) => {
+    const { increment } = useContext(CartContext);
+    let amountRef: HTMLInputElement;
+
     return (
         <div class='card-container'>
             <div class='stock flex'>
@@ -16,7 +20,7 @@ export const ItemCard: Component<CardProps> = (props) => {
                     <span class='sale'>On Sale</span>
                     <span class='availability'>In Stock</span>
                 </div>
-                <input type='number' value='1' min='1' max='50' />
+                <input type='number' value='1' min='1' max='50' ref={amountRef!} />
             </div>
             <div class='icon'>
                 <img src={props.icon} alt='icon' />
@@ -34,7 +38,10 @@ export const ItemCard: Component<CardProps> = (props) => {
                 <button class="details">
                     <span>Details</span>
                 </button>
-                <button class='add'>
+                <button class='add' onClick={() => {
+                    const number = Number(amountRef.value);
+                    number && increment(number);
+                }}>
                     <span>Add</span>
                     <div class="icon">
                         <img src="https://chicksgold.com/icons/cart.svg" alt="cart" />

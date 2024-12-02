@@ -1,7 +1,9 @@
-import { createSignal } from 'solid-js';
+import { createSignal, useContext } from 'solid-js';
 import './navbar.css';
+import { CartContext } from '../../context/cart';
 
 export const Navbar = () => {
+    const { cart } = useContext(CartContext);
     const [visible, setVisible] = createSignal(false);
 
     function handleClose() {
@@ -62,7 +64,7 @@ export const Navbar = () => {
                     </a>
                     <div class="nav-link cart">
                         <img src="https://chicksgold.com/icons/cart.svg" alt="cart" />
-                        <span>Cart (0)</span>
+                        <span>Cart ({cart()})</span>
                     </div>
                     <button class='flex'>
                         <span>Sign In</span>
