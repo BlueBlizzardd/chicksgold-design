@@ -112,11 +112,19 @@
         .details {
             background-color: #3f4254;
             color: white;
+
+            &:hover {
+                background-color: #474a5a;
+            }
         }
 
         .add {
             background-color: #5762d5;
             color: white;
+
+            &:hover {
+                background-color: #4a53b5;
+            }
 
             .icon {
                 height: 75%;
@@ -124,6 +132,7 @@
                 border-radius: 4px;
                 background: #454da8;
                 align-content: center;
+
 
                 img {
                     display: block;

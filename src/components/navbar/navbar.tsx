@@ -44,7 +44,7 @@ export const Navbar = () => {
                     </li>
                     <li>
                         <a href="#" class="nav-link">
-                            <span>More</span>
+                            <span>Swap</span>
                             <img src="https://chicksgold.com/icons/arrow-down.svg" alt="arrow" class='arrow' />
                         </a>
                     </li>
@@ -60,10 +60,14 @@ export const Navbar = () => {
                         <span>USD</span>
                         <img src="https://chicksgold.com/icons/arrow-down.svg" alt="arrow" class='arrow' />
                     </a>
+                    <div class="nav-link cart">
+                        <img src="https://chicksgold.com/icons/cart.svg" alt="cart" />
+                        <span>Cart (0)</span>
+                    </div>
                     <button class='flex'>
                         <span>Sign In</span>
                         <img src="https://chicksgold.com/sign-in/profile.png" alt="profile" class='profile' />
-                    </button> {/* Placeholder, gotta improve this somehow */}
+                    </button>
                 </div>
             </div>
         </nav>

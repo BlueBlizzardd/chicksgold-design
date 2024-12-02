@@ -3,7 +3,7 @@
         margin-top: 72px;
         padding-top: 110px;
         padding-bottom: 80px;
-        background: no-repeat linear-gradient(transparent, 50%, #37384b), url('/xenoblade.jpg');
+        background: no-repeat linear-gradient(transparent, 10%, #37384b), url('/xenoblade.jpg');
         background-size: cover;
         color: white;
     }
