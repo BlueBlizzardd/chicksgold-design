@@ -4,6 +4,7 @@
         padding-top: 110px;
         padding-bottom: 80px;
         background: no-repeat url('https://chicksgold.com/backgrounds/default.jpg');
+        background-position: center;
         background-size: cover;
         color: white;
     }
@@ -137,7 +138,7 @@
                 width: 100%;
                 flex-grow: 1;
 
-                .fiter {
+                .filter {
                     flex-grow: 1;
                 }
             }
