@@ -2,7 +2,7 @@ import { Index } from 'solid-js';
 import './pagination.css';
 
 export const Pagination = () => {
-    const pages = Array.from({ length: 4 }, (x, i) => i + 1);
+    const pages = Array.from({ length: 4 }, (_, i) => i + 1);
 
     return (
         <div class='paginator flex'>

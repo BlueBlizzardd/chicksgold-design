@@ -11,7 +11,7 @@ export type CardProps = {
 
 export const ItemCard: Component<CardProps> = (props) => {
     const { increment } = useContext(CartContext);
-    let amountRef: HTMLInputElement;
+    let amountRef: HTMLInputElement | undefined;
 
     return (
         <div class='card-container'>
@@ -39,7 +39,7 @@ export const ItemCard: Component<CardProps> = (props) => {
                     <span>Details</span>
                 </button>
                 <button class='add' onClick={() => {
-                    const number = Number(amountRef.value);
+                    const number = Number(amountRef?.value);
                     number && increment(number);
                 }}>
                     <span>Add</span>
