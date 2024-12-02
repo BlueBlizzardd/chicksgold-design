@@ -24,10 +24,12 @@
 
     @media (width < 600px) {
         :scope>button {
-            font-size: 14px;
-            padding-inline: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             height: 30px;
             width: 30px;
+            font-size: 14px;
 
             &:nth-child(n+4):nth-child(-n+5) {
                 display: none;
