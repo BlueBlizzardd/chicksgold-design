@@ -9,7 +9,11 @@ export const ItemGrid: Component<{ items: CardProps[] }> = (props) => {
             <Suspense fallback={<p>Loading...</p>}>
                 <div class='search-results flex'>
                     <span class='result-num'>Showing 20 of 125</span>
-                    <input type="text" placeholder="Sort by" />
+                    <div class="filter sort-by-filter flex">
+                        <img src="https://chicksgold.com/icons/green-icons/filter.svg" alt="filter" />
+                        <input type="text" placeholder="Sort by" />
+                        <img src="/arrow_drop_down.svg" alt="arrow down" class='arrow' />
+                    </div>
                 </div>
                 <div class='item-grid grid'>
                     <Index each={props.items}>

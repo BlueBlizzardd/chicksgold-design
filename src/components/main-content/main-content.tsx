@@ -15,10 +15,25 @@ export const MainContent = () => {
             <div class='container'>
                 <div class='heading'>Game Items</div>
                 <div class='searchbar-row flex'>
-                    <input type='text' placeholder='Select a game' class='game-filter' />
-                    <input type='text' placeholder='Search' class='search-filter' />
-                    <input type='number' placeholder='Price' class='price-filter' />
-                    <input type='text' placeholder='Item Type' class='type-filter' />
+                    <div class="filter game-filter flex">
+                        <img src="https://chicksgold.com/icons/game-default.svg" alt="game icon" />
+                        <input type='text' id='game' name='game' placeholder='Select a game' class='game-filter' />
+                        <img src="/arrow_drop_down.svg" alt="arrow down" class='arrow' />
+                    </div>
+                    <div class="filter search-filter flex">
+                        <img src="/search.svg" alt="search" />
+                        <input type='text' id='search' name='search' placeholder='Search' class='search-filter' />
+                    </div>
+                    <div class="filter price-filter flex">
+                        <img src="https://chicksgold.com/icons/green-icons/item-bag.svg" alt="item bag" />
+                        <input type='text' id='price' name='price' placeholder='Price' class='price-filter' />
+                        <img src="/arrow_drop_down.svg" alt="arrow down" class='arrow' />
+                    </div>
+                    <div class="filter type-filter flex">
+                        <img src="https://chicksgold.com/icons/green-icons/feather.svg" alt="feather" />
+                        <input type='text' id='type' name='type' placeholder='Item Type' class='type-filter' />
+                        <img src="/arrow_drop_down.svg" alt="arrow down" class='arrow' />
+                    </div>
                 </div>
                 <ItemGrid items={data()!} />
             </div>

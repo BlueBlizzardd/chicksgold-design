@@ -3,7 +3,7 @@
         margin-top: 72px;
         padding-top: 110px;
         padding-bottom: 80px;
-        background: no-repeat linear-gradient(transparent, 10%, #37384b), url('/xenoblade.jpg');
+        background: no-repeat linear-gradient(transparent, 5%, #37384b), url('/xenoblade.jpg');
         background-size: cover;
         color: white;
     }
@@ -23,9 +23,46 @@
         margin-bottom: 12px;
         margin-top: 20px;
 
-        >* {
+    }
+
+    .filter {
+        border-radius: 4px;
+        height: 50px;
+        padding: 12px;
+        border: .5px;
+        border-radius: 4px;
+        background-color: rgba(76, 96, 133, .2);
+        color: white;
+
+        &:hover {
+            background-color: rgba(76, 96, 133, .4);
+
+            .arrow {
+                rotate: 180deg;
+                transition: .2s ease-in;
+            }
+        }
+
+        &:focus-visible {
+            outline: none;
+            background-color: rgba(76, 96, 133, .6);
+        }
+
+        &::placeholder {
+            font-weight: 500;
+            color: rgba(250, 252, 255, .75);
+        }
+
+        input {
             appearance: none;
+            height: auto;
+            padding: 0;
             min-width: 0;
+            background-color: transparent;
+        }
+
+        .arrow {
+            margin-left: auto;
         }
     }
 
@@ -34,13 +71,6 @@
 
         &:hover {
             background-color: #465778;
-        }
-
-        &::after {
-            content: '';
-            width: 1rem;
-            background: url('/arrow_drop_down.svg') no-repeat right 1rem;
-
         }
     }
 

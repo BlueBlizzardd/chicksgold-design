@@ -11,7 +11,7 @@
         margin-inline: auto;
 
         > :first-child {
-            align-self: normal;
+            align-self: center;
         }
     }
 
@@ -69,6 +69,7 @@
     @media (width < 1040px) {
         .info {
             justify-content: center;
+            text-align: center;
         }
     }
 }
