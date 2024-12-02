@@ -40,7 +40,6 @@
 
             .arrow {
                 rotate: 180deg;
-                transition: .2s ease-in;
             }
         }
 
@@ -64,6 +63,7 @@
 
         .arrow {
             margin-left: auto;
+            transition: .2s ease-in;
         }
     }
 
