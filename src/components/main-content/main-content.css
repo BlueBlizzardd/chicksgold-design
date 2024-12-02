@@ -3,7 +3,7 @@
         margin-top: 72px;
         padding-top: 110px;
         padding-bottom: 80px;
-        background: no-repeat linear-gradient(transparent, 5%, #37384b), url('/xenoblade.jpg');
+        background: no-repeat url('https://chicksgold.com/backgrounds/default.jpg');
         background-size: cover;
         color: white;
     }
@@ -25,6 +25,7 @@
     }
 
     .filter {
+        --gap: 1rem;
         border-radius: 4px;
         height: 50px;
         padding: 12px;
@@ -73,12 +74,21 @@
         }
     }
 
+    .other-filters {
+        --gap: 0;
+        flex-wrap: wrap;
+
+        .filter {
+            flex-grow: 1;
+
+            &:first-child {
+                border-right: 1px solid #4c6085;
+            }
+        }
+    }
+
     @media (max-width: 576px) {
         :scope {
-            padding-inline: 20px;
-        }
-
-        .container {
             padding-inline: 20px;
         }
 
@@ -88,12 +98,26 @@
             >* {
                 flex-grow: 1;
             }
+
+            .other-filters {
+                .filter:first-child {
+                    border-right: none;
+                }
+            }
         }
     }
 
     @media (min-width: 576px) {
         .container {
             max-width: 540px;
+        }
+
+        .searchbar-row {
+
+            .search-filter,
+            .other-filters {
+                flex-grow: 1;
+            }
         }
     }
 
@@ -108,6 +132,15 @@
             >* {
                 flex-grow: 1;
             }
+
+            .other-filters {
+                width: 100%;
+                flex-grow: 1;
+
+                .fiter {
+                    flex-grow: 1;
+                }
+            }
         }
     }
 
@@ -116,7 +149,6 @@
             max-width: 960px;
         }
 
-
         .searchbar-row {
             >:first-child {
                 max-width: 294px;
@@ -124,6 +156,18 @@
 
             >:nth-child(2) {
                 flex: 1 0 0%;
+            }
+
+            .other-filters {
+                flex-grow: 0;
+            }
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        .searchbar-row {
+            .other-filters {
+                flex-grow: 1;
             }
         }
     }

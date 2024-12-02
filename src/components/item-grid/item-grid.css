@@ -1,5 +1,6 @@
 @scope (.item-container) {
     :scope {
+        min-height: 600px;
         border: 1px solid #3f4b67;
         border-radius: 5px;
         padding: 50px 50px 24px;

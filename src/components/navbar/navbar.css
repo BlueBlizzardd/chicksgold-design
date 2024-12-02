@@ -11,7 +11,7 @@
         border-bottom: 1px solid rgba(76, 96, 133, .5);
         background-color: var(--primary-bg);
         color: white;
-        container-type: inline-size;
+        container: nav / inline-size;
     }
 
     .nav-brand {
@@ -107,7 +107,7 @@
         }
     }
 
-    @media (width < 1500px) {
+    @media (width < 1421px) {
         .mobile-toggle {
             display: block;
             position: relative;
