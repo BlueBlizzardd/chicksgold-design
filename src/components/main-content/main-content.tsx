@@ -1,4 +1,4 @@
-import { createMemo, createResource, createSignal } from 'solid-js';
+import { createMemo, createResource } from 'solid-js';
 import { ItemGrid } from '../item-grid/item-grid';
 import { CardProps } from '../item-grid/item-card/item-card';
 import './main-content.css';
